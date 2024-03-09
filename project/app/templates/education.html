@@ -1,0 +1,132 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="icon" href="https://i.ibb.co/zRsTj3p/Frame-1-37.png">
+
+
+    <link rel="stylesheet" href="{% static "css/style.css" %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" class="stylesheet">
+</head>
+<body>
+
+      <!-------------------------- Header Area -------------------------->
+      <header class="header-area">
+        <div class="container">
+            <div class="header">
+               
+                <a href="" class="logo">
+                    <h3>Portfolio</h3>
+                </a>
+                   
+                <ul class="navbar">
+                    <li><a href="{% url "home" %}">Home</a></li>
+                    <li><a href="{% url "about" %}">About</a></li>
+                    <li><a href="{% url "education" %}">Education</a></li>
+                    <li><a href="{% url "projects" %}">Projects</a></li>
+                    <li><a href="{% url "contact" %}">Contact</a></li>
+                </ul>
+                
+                <div class="menu_icon">
+                    <i class="fa fa-bars"></i>
+                </div>
+
+            </div>
+        </div> 
+    </header>
+
+
+         <!-------------- Education & Internship -------------->
+    <section class="education-content" id="education">
+        <div class="container">
+            <div class="row">
+                <div class="education ">
+                    <h3 class="title">Education</h3>
+                    <div class="row">
+                        <div class="timeline-box">
+                            <div class="timeline">
+
+                                <!-- Timeline-item -->
+                                <div class="timeline-item">
+                                    <div class="circle-dot"></div>
+                                    <h3 class="timeline-title">
+                                        B.E CSE-86%
+                                    </h3>
+                                    <h4 class="timeline-title"> Corporate Institute of Science and Technology</h4>
+                                    <h4 class="timeline-title">
+                                        <i class="fa fa-calendar"></i> 2021-2025
+                                    </h4>
+                                </div> 
+                                <!-- Timeline-item -->
+                                <div class="timeline-item">
+                                    <div class="circle-dot"></div>
+                                    <h3 class="timeline-title">12th - 74%</h3>
+                                    <h4 class="timeline-title">Narmada Vidhya Niketan Higher Secondary school</h4>
+                                    <h4 class="timeline-title">
+                                        <i class="fa fa-calendar"></i> 2020-2021
+                                    </h4>
+                                </div>
+                                <!-- Timeline-item -->
+                                <div class="timeline-item">
+                                    <div class="circle-dot"></div>
+                                    <h3 class="timeline-title">
+                                        10th - 86%
+                                    </h3>
+                                    <h4 class="timeline-title"> Samaritans Higher Secondary school</h4>
+                                    <h4 class="timeline-title">
+                                        <i class="fa fa-calendar"></i> 2018-2019
+                                    </h4>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="internship">
+                    <h3 class="title">Internship</h3>
+                    <div class="row">
+                        <div class="timeline-box">
+                            <div class="timeline">
+                                
+                                <!-- Timeline-item -->
+                                <div class="timeline-item">
+                                    <div class="circle-dot"></div>
+                                    <h3 class="timeline-title">
+                                        WEBSITE DEVELOPMENT
+                                    </h3>
+                                    <h4 class="timeline-title">CYBROM TECHNOLOGY</h4>
+                                    <h4 class="timeline-title">
+                                        <i class="fa fa-calendar"></i> MAY-2023
+                                    </h4>
+                                    <li class="timeline-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis placeat, repellat consequuntur necessitatibus alias officiis consectetur suscipit non vitae. Veritatis fugit saepe autem minus odit minima non, voluptate distinctio alias.
+                                    </li>
+                                </div> 
+                                <!-- Timeline-item -->
+                                <div class="timeline-item">
+                                    <div class="circle-dot"></div>
+                                    <h3 class="timeline-title">PCB LAYOUT DESIGN AND FABRICATION</h3>
+                                    <h4 class="timeline-title">PIONEER CIRCUITS</h4>
+                                    <h4 class="timeline-title">
+                                        <i class="fa fa-calendar"></i> DEC-2021
+                                    </h4>
+                                    <li class="timeline-text">Experienced in PCB design and fabrication with a focus on Altium Designer software. Proficient in designing high-quality PCB boards. Two-week internship in the field, gaining hands-on experience and enhancing skills.</li>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <footer class="footer">
+            <small class="message">Thanks for visiting and happy coding!</small>
+            <small class="copyright">&copy; Copyright 2026. All rights reserved.</small>
+           </footer>
+</body>
+</html>
