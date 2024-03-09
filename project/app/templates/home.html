@@ -219,7 +219,8 @@
                 <p>Get In Touch</p>
             </div>
             <div class="contact">
-                <form name="submitToGoogleSheet">
+                <form action="{% url "savecont" %}" method="POST">
+                    {% csrf_token %}
                     <input type="text" name="NAME" placeholder="Name" required>
                     <input type="email" name="EMAIL" placeholder="Email" required>
                     <input type="text" name="SUBJECT" placeholder="Subject">

@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from.models import Contact
 
 # Create your views here.
 def home(request):
@@ -15,6 +16,20 @@ def projects(request):
 
 def contact(request):
     return render(request,'contact.html')
+
+def savecont(request):
+    
+    if request.method == 'POST':
+        name = request.POST.get('NAME')
+        email = request.POST.get('EMAIL')
+        subject = request.POST.get('SUBJECT')
+        message = request.POST.get('MESSAGE')
+        print(name)
+        Contact.objects.create(name=name,email=email,message=message,subject=subject)
+        
+        return render(request,'home.html')
+
+
 
 
 
